@@ -367,9 +367,6 @@
 
 .mailing {
     display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .email-field {
@@ -473,9 +470,9 @@
 }
 
 .discriotion-coast {
-    margin-left: -1.25rem;
-    margin-right: -1.25rem;
-    margin-top: -1.85rem;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: -30px;
     padding-top: 52px;
     padding-left: 20px;
     padding-right: 20px;
@@ -488,14 +485,13 @@
     padding-top: 53px;
 }
 
-.shop-comtainer {
+.shop-container {
     width: 80%;
     margin: auto;
 }
 
 .shop-picture {
     width: 100%;
-    margin-left: auto;
 }
 
 .shop-heading {
@@ -514,7 +510,6 @@
     font-style: normal;
     text-transform: none;
     margin-bottom: 34px;
-
 }
 
 .video-link {
@@ -711,16 +706,15 @@
         font-size: 12px;
     }
 
-    .shop-comtainer {
-        width: 85%;
-        margin: auto;
+    .shop-container {
+        width: 90%;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
     .shop-content {
-        width: 45%;
+        width: 44%;
     }
 }
 
@@ -744,7 +738,7 @@
     }
 
     .logo {
-        width: 11%;
+        width: 15.2%;
         height: 41px;
         padding-top: 28px;
     }
@@ -753,10 +747,9 @@
         display: none;
     }
 
-
     .menu-list {
         display: flex;
-        margin-top: 45px;
+        padding-top: 45px;
     }
 
     .menu-item {
@@ -827,7 +820,6 @@
         display: flex;
         margin-top: 61px;
         border-bottom: none;
-
     }
 
     .sidebar {
@@ -861,16 +853,15 @@
         font-size: 20px;
     }
 
-    .shop-comtainer {
+    .shop-container {
         max-width: 1200px;
-        margin: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .shop-content {
-        width: 30%;
+        width: 29%;
     }
 
     .btn:hover {
