@@ -24,12 +24,12 @@
                 </div>
                 <nav class="navigation">
                     <ul class="menu-list">
-                        <li class="menu-item"><a href="#" class="menu-link"></a>главная</li>
-                        <li class="menu-item"><a href="#" class="menu-link"></a>посты</li>
-                        <li class="menu-item"><a href="#" class="menu-link"></a>статьи</li>
-                        <li class="menu-item"><a href="#" class="menu-link"></a>теги</li>
-                        <li class="menu-item"><a href="#" class="menu-link"></a>темы</li>
-                        <li class="menu-item"><a href="#" class="menu-link"></a>контакты</li>
+                        <li class="menu-item"><a href="#" class="menu-link">главная</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">посты</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">статьи</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">теги</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">темы</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -47,7 +47,9 @@
                             <li class="trend-item"><a class="trend-link" href="#">lifestile</a></li>
                             <li class="trend-item"><a class="trend-link" href="#">interior</a></li>
                         </ul>
-                        <div class="trend-article">сейчас в тренде: сад на подоконнике</div>
+                        <a class="trend-article-link" href="#">
+                            <h2 class="trend-article">сейчас в тренде: сад на подоконнике</h2>
+                        </a>
                     </div>
                 </div>
                 <div class="trend trend-food">
@@ -55,7 +57,9 @@
                         <ul class="trend-topic">
                             <li class="trend-item"><a class="trend-link" href="#">food</a></li>
                         </ul>
-                        <div class="trend-article">сыры на красивых картинках из интернета: какие они на вкус</div>
+                        <a class="trend-article-link" href="#">
+                            <h2 class="trend-article">сыры на красивых картинках из интернета: какие они на вкус</h2>
+                        </a>
                     </div>
                 </div>
                 <div class="trend trend-style">
@@ -64,7 +68,9 @@
                             <li class="trend-item"><a class="trend-link" href="#">style</a></li>
                             <li class="trend-item"><a class="trend-link" href="#">travel</a></li>
                         </ul>
-                        <div class="trend-article">собираемся в первый поход в горы</div>
+                        <a class="trend-article-link" href="#">
+                            <h2 class="trend-article">собираемся в первый поход в горы</h2>
+                        </a>
                     </div>
                 </div>
                 <div class="trend trend-health">
@@ -73,7 +79,9 @@
                             <li class="trend-item"><a class="trend-link" href="#">food</a></li>
                             <li class="trend-item"><a class="trend-link" href="#">health</a></li>
                         </ul>
-                        <div class="trend-article">сейчас в тренде: сколько витаминов в лимоне</div>
+                        <a class="trend-article-link" href="#">
+                            <h2 class="trend-article">сейчас в тренде: сколько витаминов в лимоне</h2>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -240,7 +248,6 @@
                     <input class="search-field" type="search" placeholder="Найти...">
                     <button class="search-button" type="button"></button>
                 </form>
-                <form class=""></form>
                 <div class="mailing">
                     <h2 class="heading-news">рассылка</h2>
                     <form class="sanding">
@@ -290,82 +297,87 @@
                         </li>
                     </ul>
                 </section>
-                <section class="shop">
-                    <h2 class="heading-news">наши изделия</h2>
-                    <div class="shop-content">
-                        <img class="shop-picture" src="img/shop-item-mobile1.jpg" alt="Подушка">
-                        <div class="discriotion-coast">
-                            <h2 class="shop-heading">подушки на диван</h2>
-                            <p class="discription">набор из двух подушек с модными принтами. Видео о создании <a
-                                    class="video-link" href="#">здесь</a></p>
-                            <div class="buy">
-                                <div class="coast">
-                                    <p class="old-coast">1000 ₽</p>
-                                    <p class="new-coast">800 ₽</p>
-                                </div>
-                                <form class="buy-button">
-                                    <button class="btn" type="button">в магазин</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-content">
-                        <img class="shop-picture" src="img/shop-item-mobile2.jpg" alt="Зайчик">
-                        <div class="discriotion-coast">
-                            <h2 class="shop-heading">кукла &laquoзайчик&raquo</h2>
-                            <p class="discription">интересная рукодкльная кукла &laquoзайчик&raquo, созданию которой
-                                посвещается <a class="video-link" href="#">весенняя серия постов</a> в блоге и несколько
-                                подкастов</p>
-                            <div class="buy">
-                                <div class="coast">
-                                    <p class="new-coast hare">3500 ₽</p>
-                                </div>
-                                <form class="buy-button">
-                                    <button class="btn" type="button">в магазин</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shop-content">
-                        <img class="shop-picture" src="img/shop-item-mobile3.jpg" alt="Шестиугольная рамка">
-                        <div class="discriotion-coast">
-                            <h2 class="shop-heading">шестиугольная рамка</h2>
-                            <p class="discription">необычная рамка для украшения дома из видео<a class="video-link"
-                                    href="#">&laquoКак сделать рамку из подлучных средств за 30 минут&raquo</a></p>
-                            <div class="buy">
-                                <div class="coast">
-                                    <p class="old-coast">500 ₽</p>
-                                    <p class="new-coast">400 ₽</p>
-                                </div>
-                                <form class="buy-button">
-                                    <button class="btn" type="button">в магазин</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </aside>
-            <footer class="footer">
-                <div class="social-media">
-                    <ul class="social-list">
-                        <li class="social-item social_item_pinterest">
-                            <a class="social-link dribbble" href="#"></a>
-                        </li>
-                        <li class="social-item social_item_pinterest">
-                            <a class="social-link pinterest" href="#"></a>
-                        </li>
-                        <li class="social-item social_item_pinterest">
-                            <a class="social-link tunblr" href="#"></a>
-                        </li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="copy">
-                    <span>Copyright &copy; 2009-2019 City Blog LLS</span>
-                </div>
-            </footer>
         </div>
     </div>
+    <section class="shop">
+        <div class="shop-wrap">
+            <h2 class="heading-news">наши изделия</h2>
+            <div class="shop-comtainer">
+                <div class="shop-content">
+                    <img class="shop-picture" src="img/shop-item-mobile1.jpg" alt="Подушка">
+                    <div class="discriotion-coast">
+                        <h2 class="shop-heading">подушки на диван</h2>
+                        <p class="discription">Набор из двух подушек с модными принтами. Видео о создании <a
+                                class="video-link" href="#">здесь</a></p>
+                        <div class="buy">
+                            <div class="coast">
+                                <p class="old-coast">1000 ₽</p>
+                                <p class="new-coast">800 ₽</p>
+                            </div>
+                            <div class="buy-button">
+                                <a class="btn" href="#">в магазин</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <img class="shop-picture" src="img/shop-item-mobile2.jpg" alt="Зайчик">
+                    <div class="discriotion-coast">
+                        <h2 class="shop-heading">кукла &laquoзайчик&raquo</h2>
+                        <p class="discription">Интересная рукодкльная кукла &laquoзайчик&raquo, созданию которой
+                            посвещается <a class="video-link" href="#">весенняя серия постов</a> в блоге и несколько
+                            подкастов</p>
+                        <div class="buy">
+                            <div class="coast">
+                                <p class="new-coast hare">3500 ₽</p>
+                            </div>
+                            <div class="buy-button">
+                                <a class="btn" href="#">в магазин</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-content">
+                    <img class="shop-picture" src="img/shop-item-mobile3.jpg" alt="Шестиугольная рамка">
+                    <div class="discriotion-coast">
+                        <h2 class="shop-heading">шестиугольная рамка</h2>
+                        <p class="discription">Необычная рамка для украшения дома из видео<a class="video-link"
+                                href="#">&laquoКак сделать рамку из подлучных средств за 30 минут&raquo</a></p>
+                        <div class="buy">
+                            <div class="coast">
+                                <p class="old-coast">500 ₽</p>
+                                <p class="new-coast">400 ₽</p>
+                            </div>
+                            <div class="buy-button">
+                                <a class="btn" href="#">в магазин</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social-media">
+            <ul class="social-list">
+                <li class="social-item social_item_pinterest">
+                    <a class="social-link dribbble" href="#"></a>
+                </li>
+                <li class="social-item social_item_pinterest">
+                    <a class="social-link pinterest" href="#"></a>
+                </li>
+                <li class="social-item social_item_pinterest">
+                    <a class="social-link tunblr" href="#"></a>
+                </li>
+                </a>
+            </ul>
+        </div>
+        <div class="copy">
+            <span>Copyright &copy; 2009-2019 City Blog LLS</span>
+        </div>
+    </footer>
+
 
 </body>
 
