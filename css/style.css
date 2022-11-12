@@ -23,12 +23,153 @@
     font-display: swap;
 }
 
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.popup-contaner {
+    position: absolute;
+    background-color: #ffffff;
+    width: 320px;
+}
+
+.popup-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    cursor: pointer;
+}
+
+.popup-content {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.select-form {
+    display: block;
+    margin-top: 30px;
+}
+
+.qustion {
+    font-family: open-sans, arial, sans-serif;
+    font-size: 13px;
+    font-weight: regular;
+    font-style: normal;
+}
+
+.select {
+    width: 100%;
+    height: 47px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f4f7f6;
+    background-image: url(../svg/form-arrows.svg);
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    margin-top: 10px;
+    font-family: open-sans, arial, sans-serif;
+    font-size: 13px;
+    font-weight: regular;
+    font-style: normal;
+}
+
+.radio-form {
+    display: block;
+    margin-top: 33px;
+}
+
+.radio-container {
+    margin-top: 10px;
+}
+
+.form-textaria {
+    margin-top: 30px;
+    margin-bottom: 26px;
+    font-family: open-sans, arial, sans-serif;
+    font-size: 13px;
+    font-weight: regular;
+    font-style: normal;
+}
+
+.radio-button {
+    display: none;
+}
+
+.radio-select::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url(../svg/form-empty-circle.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.radio:nth-child(n+2) {
+    margin-left: 20px;
+}
+
+.radio-button:checked+.radio-select::before {
+    background-image: url(../svg/form-circle.svg);
+}
+
+.textarea {
+    min-width: 100%;
+    height: 130px;
+    resize: none;
+    border: none;
+    margin-top: 10px;
+    background-color: #f4f7f6;
+    padding-left: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.submit {
+    margin-bottom: 30px;
+}
+
+.submit-button {
+    width: 100%;
+    height: 47px;
+    border: none;
+    background-color: #b59f5b;
+    font-family: open-sans, arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .header {
     background-image: url(../img/banner-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header::before {
@@ -42,22 +183,39 @@
     opacity: 0.6;
 }
 
-.menu-burger span {
-    width: 25px;
-    height: 5px;
-    background-color: white;
+.menu-burger {
     position: absolute;
+    z-index: 3;
     top: 40px;
     right: 0px;
+    width: 25px;
+    height: 4px;
+}
+
+.menu-burger span:nth-of-type(1) {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
     z-index: 3;
 }
 
 .menu-burger span:nth-of-type(2) {
-    top: 30px;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 3;
 }
 
 .menu-burger span:nth-of-type(3) {
-    top: 50px;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin-top: -10px;
+    position: absolute;
+    z-index: 3;
 }
 
 .content-header {
@@ -122,9 +280,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
     padding-bottom: 16px;
+    box-sizing: border-box;
     margin-top: 4px;
+    min-height: 230px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .trend-garden {
@@ -158,8 +322,7 @@
 .trend-content {
     position: relative;
     border: 2px solid #7f743b;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     z-index: 2;
     padding: 21px 31px;
     box-sizing: border-box;
@@ -194,6 +357,7 @@
     text-transform: uppercase;
     margin-right: 19px;
     z-index: 2;
+
 }
 
 .trend-link {
@@ -467,6 +631,8 @@
     margin-top: 25px;
     margin-left: 15px;
     margin-right: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .discriotion-coast {
@@ -479,6 +645,7 @@
     box-sizing: border-box;
     border: 3px solid #d3c59d;
     position: relative;
+    flex-grow: 1;
 }
 
 .shop-wrap {
@@ -540,24 +707,25 @@
 .buy {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
 }
 
 .buy-button {
     width: 49%;
     height: 48px;
-    background-color: #b59f5b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: open-sans, arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     font-style: normal;
     color: #ffffff;
+    background-color: #b59f5b;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -628,14 +796,13 @@
     }
 
     .trend {
-        display: flex;
         width: calc(50% - 4px);
         margin-right: 4px;
     }
 
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
+@media (min-width: 641px) and (max-width: 1199px) {
     .header {
         background-image: url(../img/banner-bg-tablet.jpg);
     }
@@ -669,7 +836,6 @@
     }
 
     .trend {
-        display: flex;
         width: calc(50% - 4px);
         margin-right: 4px;
     }
@@ -718,7 +884,7 @@
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     .header {
         background-image: url(../img/banner-bg.jpg);
         max-width: 1920px;
@@ -792,8 +958,6 @@
     .trend {
         width: calc(25% - 4px);
         margin-right: 4px;
-        display: flex;
-        align-items: stretch;
     }
 
     .trend-article-link:hover {
